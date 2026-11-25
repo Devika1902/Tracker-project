@@ -14,9 +14,19 @@ Project updates often arrive in separate spreadsheets and conversations. A coord
 
 This small implementation tracker combines four related data tables: **Project Tasks**, **Dependencies**, **Issues**, and **Milestones**. A lightweight web dashboard summarizes delivery status, allows task search and filtering, surfaces open issues and milestones, and exports the task list as CSV. The same source data can be opened in Excel, imported into Power BI, or queried using the included SQL examples.
 
-### Dashboard preview
+### Power BI dashboard images
 
-Open `index.html` through the local server below. The page includes a project overview, workstream progress, launch readiness, searchable task register, active issues and a milestone timeline. It is responsive and uses only the included project data and browser JavaScript.
+The three report-page images are ready to view directly in GitHub; no local server is needed. They use the same fictional project snapshot and cover the requested management views.
+
+**Project overview**
+
+![Project overview dashboard](powerbi-dashboards/01-project-overview.png)
+
+**Issues & dependencies** · [Open image](powerbi-dashboards/02-issues-and-dependencies.png)
+
+**Milestone tracking** · [Open image](powerbi-dashboards/03-milestone-tracking.png)
+
+The PNG files are in [`powerbi-dashboards/`](powerbi-dashboards/), with a reproducible renderer at `scripts/render_dashboard_images.ps1`. The existing `index.html` is an optional interactive companion; see the local run instructions below only if you want that version.
 
 ## Example results (as of 25 November 2026)
 
