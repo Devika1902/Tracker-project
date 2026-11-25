@@ -1,6 +1,4 @@
-# Clearing service dashboard images
-
-Static PNG images for the fictional clearing-service implementation tracker. Open the images directly in GitHub or download them for a portfolio, presentation, or project review. No local server or Power BI installation is needed to view these images.
+.
 
 ## Project overview
 
