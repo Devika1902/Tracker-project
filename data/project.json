@@ -1,0 +1,38 @@
+{
+  "project": {"name":"Clearing service launch","startDate":"2026-10-19","launchDate":"2026-12-18","asOf":"2026-11-25","currency":"EUR"},
+  "tasks": [
+    {"id":"T01","name":"Confirm service scope and client journeys","team":"Business","owner":"Maya Chen","dueDate":"2026-10-23","status":"Complete","progress":100,"dependencyId":"","priority":"High"},
+    {"id":"T02","name":"Approve target operating model","team":"Business","owner":"Luca Weber","dueDate":"2026-10-30","status":"Complete","progress":100,"dependencyId":"T01","priority":"High"},
+    {"id":"T03","name":"Define clearing and settlement requirements","team":"Business","owner":"Maya Chen","dueDate":"2026-11-06","status":"Complete","progress":100,"dependencyId":"T02","priority":"High"},
+    {"id":"T04","name":"Provision test environment","team":"Infrastructure","owner":"Jonas Berg","dueDate":"2026-11-13","status":"Blocked","progress":70,"dependencyId":"T02","priority":"High"},
+    {"id":"T05","name":"Configure network connectivity","team":"Infrastructure","owner":"Priya Nair","dueDate":"2026-11-20","status":"In progress","progress":75,"dependencyId":"T04","priority":"High"},
+    {"id":"T06","name":"Build clearing instruction workflow","team":"IT Development","owner":"Ethan Cole","dueDate":"2026-11-27","status":"In progress","progress":70,"dependencyId":"T03","priority":"High"},
+    {"id":"T07","name":"Implement position and cash reporting","team":"IT Development","owner":"Sofia Rossi","dueDate":"2026-12-01","status":"In progress","progress":55,"dependencyId":"T03","priority":"Medium"},
+    {"id":"T08","name":"Set up message validation rules","team":"IT Development","owner":"Ethan Cole","dueDate":"2026-12-02","status":"Not started","progress":0,"dependencyId":"T06","priority":"Medium"},
+    {"id":"T09","name":"Execute end-to-end connectivity test","team":"Testing","owner":"Noah Fischer","dueDate":"2026-11-24","status":"Blocked","progress":20,"dependencyId":"T05","priority":"High"},
+    {"id":"T10","name":"Run functional test cycle","team":"Testing","owner":"Ava Müller","dueDate":"2026-12-04","status":"Not started","progress":0,"dependencyId":"T06","priority":"High"},
+    {"id":"T11","name":"Complete operational readiness review","team":"Operations","owner":"Lena Hoffmann","dueDate":"2026-12-08","status":"Not started","progress":0,"dependencyId":"T10","priority":"High"},
+    {"id":"T12","name":"Draft client support runbook","team":"Operations","owner":"Lena Hoffmann","dueDate":"2026-12-02","status":"In progress","progress":40,"dependencyId":"T02","priority":"Medium"},
+    {"id":"T13","name":"Prepare client communications pack","team":"Business","owner":"Luca Weber","dueDate":"2026-12-09","status":"Not started","progress":0,"dependencyId":"T07","priority":"Medium"},
+    {"id":"T14","name":"Complete business acceptance testing","team":"Business","owner":"Maya Chen","dueDate":"2026-12-11","status":"Not started","progress":0,"dependencyId":"T10","priority":"High"},
+    {"id":"T15","name":"Approve production change window","team":"Infrastructure","owner":"Jonas Berg","dueDate":"2026-12-10","status":"Not started","progress":0,"dependencyId":"T09","priority":"High"},
+    {"id":"T16","name":"Obtain launch go / no-go sign-off","team":"Business","owner":"Luca Weber","dueDate":"2026-12-16","status":"Not started","progress":0,"dependencyId":"T11","priority":"High"}
+  ],
+  "dependencies": [
+    {"taskId":"T02","dependsOnTaskId":"T01","status":"Resolved"},{"taskId":"T03","dependsOnTaskId":"T02","status":"Resolved"},{"taskId":"T04","dependsOnTaskId":"T02","status":"Resolved"},{"taskId":"T05","dependsOnTaskId":"T04","status":"At risk"},{"taskId":"T06","dependsOnTaskId":"T03","status":"Resolved"},{"taskId":"T07","dependsOnTaskId":"T03","status":"Resolved"},{"taskId":"T08","dependsOnTaskId":"T06","status":"Open"},{"taskId":"T09","dependsOnTaskId":"T05","status":"Blocked"},{"taskId":"T10","dependsOnTaskId":"T06","status":"Open"},{"taskId":"T11","dependsOnTaskId":"T10","status":"Open"},{"taskId":"T12","dependsOnTaskId":"T02","status":"Resolved"},{"taskId":"T13","dependsOnTaskId":"T07","status":"Open"},{"taskId":"T14","dependsOnTaskId":"T10","status":"Open"},{"taskId":"T15","dependsOnTaskId":"T09","status":"Blocked"},{"taskId":"T16","dependsOnTaskId":"T11","status":"Open"}
+  ],
+  "issues": [
+    {"id":"I01","title":"Test environment instability delaying connectivity testing","description":"Intermittent environment resets prevent a stable end-to-end certification run.","severity":"High","owner":"Jonas Berg","team":"Infrastructure","status":"Open","targetDate":"2026-11-27","impact":"Certification window at risk"},
+    {"id":"I02","title":"Client message samples awaiting business approval","description":"Representative settlement messages are needed to complete validation rules.","severity":"Medium","owner":"Maya Chen","team":"Business","status":"Open","targetDate":"2026-11-28","impact":"Validation build may slip"},
+    {"id":"I03","title":"Operations coverage for launch weekend to confirm","description":"Weekend support roster needs confirmation before readiness review.","severity":"Low","owner":"Lena Hoffmann","team":"Operations","status":"Open","targetDate":"2026-12-04","impact":"Readiness review dependency"},
+    {"id":"I04","title":"Reporting field mapping clarification","description":"Two optional report fields need agreement with stakeholders.","severity":"Low","owner":"Sofia Rossi","team":"IT Development","status":"Resolved","targetDate":"2026-11-21","impact":"No current schedule impact"}
+  ],
+  "milestones": [
+    {"id":"M01","name":"Scope and operating model agreed","plannedDate":"2026-10-30","actualDate":"2026-10-30","status":"Complete","owner":"Business"},
+    {"id":"M02","name":"Requirements baseline approved","plannedDate":"2026-11-06","actualDate":"2026-11-06","status":"Complete","owner":"Business"},
+    {"id":"M03","name":"Connectivity test environment ready","plannedDate":"2026-11-20","actualDate":"","status":"At risk","owner":"Infrastructure"},
+    {"id":"M04","name":"End-to-end testing complete","plannedDate":"2026-12-04","actualDate":"","status":"Upcoming","owner":"Testing"},
+    {"id":"M05","name":"Operational readiness approved","plannedDate":"2026-12-11","actualDate":"","status":"Upcoming","owner":"Operations"},
+    {"id":"M06","name":"Target service launch","plannedDate":"2026-12-18","actualDate":"","status":"Upcoming","owner":"Business"}
+  ]
+}

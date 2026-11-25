@@ -1,0 +1,5 @@
+﻿Issue ID,Title,Description,Severity,Owner,Team,Status,Target Date,Business Impact
+I01,Test environment instability delaying connectivity testing,Intermittent environment resets prevent a stable end-to-end certification run.,High,Jonas Berg,Infrastructure,Open,2026-11-27,Certification window at risk
+I02,Client message samples awaiting business approval,Representative settlement messages are needed to complete validation rules.,Medium,Maya Chen,Business,Open,2026-11-28,Validation build may slip
+I03,Operations coverage for launch weekend to confirm,Weekend support roster needs confirmation before readiness review.,Low,Lena Hoffmann,Operations,Open,2026-12-04,Readiness review dependency
+I04,Reporting field mapping clarification,Two optional report fields need agreement with stakeholders.,Low,Sofia Rossi,IT Development,Resolved,2026-11-21,No current schedule impact

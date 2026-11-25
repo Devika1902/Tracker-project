@@ -1,0 +1,17 @@
+﻿Task ID,Task Name,Team,Owner,Due Date,Status,Progress %,Depends On Task ID,Priority
+T01,Confirm service scope and client journeys,Business,Maya Chen,2026-10-23,Complete,100,,High
+T02,Approve target operating model,Business,Luca Weber,2026-10-30,Complete,100,T01,High
+T03,Define clearing and settlement requirements,Business,Maya Chen,2026-11-06,Complete,100,T02,High
+T04,Provision test environment,Infrastructure,Jonas Berg,2026-11-13,Blocked,70,T02,High
+T05,Configure network connectivity,Infrastructure,Priya Nair,2026-11-20,In progress,75,T04,High
+T06,Build clearing instruction workflow,IT Development,Ethan Cole,2026-11-27,In progress,70,T03,High
+T07,Implement position and cash reporting,IT Development,Sofia Rossi,2026-12-01,In progress,55,T03,Medium
+T08,Set up message validation rules,IT Development,Ethan Cole,2026-12-02,Not started,0,T06,Medium
+T09,Execute end-to-end connectivity test,Testing,Noah Fischer,2026-11-24,Blocked,20,T05,High
+T10,Run functional test cycle,Testing,Ava Müller,2026-12-04,Not started,0,T06,High
+T11,Complete operational readiness review,Operations,Lena Hoffmann,2026-12-08,Not started,0,T10,High
+T12,Draft client support runbook,Operations,Lena Hoffmann,2026-12-02,In progress,40,T02,Medium
+T13,Prepare client communications pack,Business,Luca Weber,2026-12-09,Not started,0,T07,Medium
+T14,Complete business acceptance testing,Business,Maya Chen,2026-12-11,Not started,0,T10,High
+T15,Approve production change window,Infrastructure,Jonas Berg,2026-12-10,Not started,0,T09,High
+T16,Obtain launch go / no-go sign-off,Business,Luca Weber,2026-12-16,Not started,0,T11,High

@@ -1,0 +1,16 @@
+﻿Task ID,Depends On Task ID,Dependency Status
+T02,T01,Resolved
+T03,T02,Resolved
+T04,T02,Resolved
+T05,T04,At risk
+T06,T03,Resolved
+T07,T03,Resolved
+T08,T06,Open
+T09,T05,Blocked
+T10,T06,Open
+T11,T10,Open
+T12,T02,Resolved
+T13,T07,Open
+T14,T10,Open
+T15,T09,Blocked
+T16,T11,Open

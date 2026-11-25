@@ -1,0 +1,7 @@
+﻿Milestone ID,Milestone,Planned Date,Actual Date,Status,Owner Team
+M01,Scope and operating model agreed,2026-10-30,2026-10-30,Complete,Business
+M02,Requirements baseline approved,2026-11-06,2026-11-06,Complete,Business
+M03,Connectivity test environment ready,2026-11-20,,At risk,Infrastructure
+M04,End-to-end testing complete,2026-12-04,,Upcoming,Testing
+M05,Operational readiness approved,2026-12-11,,Upcoming,Operations
+M06,Target service launch,2026-12-18,,Upcoming,Business
